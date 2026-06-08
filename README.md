@@ -5,6 +5,7 @@ This repository contains a singing voice dataset designed for the acoustic analy
 •	Audio Format: 44.1 kHz, 16-bit, Mono
 •	Acoustic Analysis Parameters: Analysis window length (frame size) of 2,048 samples
 2. Subjects and Dataset Structure
+
 All subjects are **soprano** singers. For each student subject, audio data was recorded at two distinct stages: **Z1 (at admission)** and **Z2 (after two years of vocal instruction)**.
 
 <hr>
