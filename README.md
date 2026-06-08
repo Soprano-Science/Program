@@ -52,48 +52,34 @@
 </table>
 <hr>
 
-<hr>
-<p><strong>Subject Groups</strong></p>
+<h2>3. Naming Convention</h2>
 
-<table border="0" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; font-weight: bold; text-align: left;">
-      <th style="padding: 8px;">Group</th>
-      <th style="padding: 8px;">ID</th>
-      <th style="padding: 8px;">N</th>
-      <th style="padding: 8px;">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 8px;"><strong>Education</strong></td>
-      <td style="padding: 8px;">E01–E07</td>
-      <td style="padding: 8px;">7</td>
-      <td style="padding: 8px;">Students in the Music Education Program</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;"><strong>Music College</strong></td>
-      <td style="padding: 8px;">V01–V13</td>
-      <td style="padding: 8px;">13</td>
-      <td style="padding: 8px;">Students majoring in Vocal Performance</td>
-    </tr>
-    <tr style="border-bottom: 2px solid #000;">
-      <td style="padding: 8px;"><strong>Reference Model</strong></td>
-      <td style="padding: 8px;">M2025</td>
-      <td style="padding: 8px;">1</td>
-      <td style="padding: 8px;">Professional soprano (normative pedagogical model for observing developmental progress)</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-3. Naming Convention
-[Subject ID][Stage]_[Detailed Information].wav
-•	Stage Mapping: before = Z1 (At admission) / after = Z2 (After 2 years of instruction)
-•	Detailed Information: Includes the recording date, song fragment identifier (tanto), and channel type (mono).
-Examples
-•	E01before_tanto-tanto_20141001_02_mono.wav
-o	Audio data for Subject E01 (Education) at admission (Z1). Recorded on October 1, 2014.
-•	V05after_20240502_tanto_tanto_02_mono.wav
-o	Audio data for Subject V05 (Music College) after two years of instruction (Z2). Recorded on May 2, 2024.
-•	M2025.wav
-o	Pedagogical reference model recorded by a professional singer.
+<p>The audio files in this repository are named based on the following convention:</p>
+
+<blockquote>
+  <strong><code>[Subject ID][Stage]_[Detailed Information].wav</code></strong>
+</blockquote>
+
+<ul>
+  <li><strong>Stage Mapping</strong>: <code>before</code> = Z1 (At admission) / <code>after</code> = Z2 (After 2 years of instruction)</li>
+  <li><strong>Detailed Information</strong>: Includes the recording date, song fragment identifier (<code>tanto</code>), and channel type (<code>mono</code>).</li>
+</ul>
+
+<h3>Examples</h3>
+<ul>
+  <li><strong><code>Audio Source_E01-E07 _tanto_ before and after/E01before_tanto-tanto_20141001_02_mono.wav</code></strong>
+    <ul>
+      <li>Audio data for Subject E01 (Education) at admission (Z1). Recorded on October 1, 2014.</li>
+    </ul>
+  </li>
+  <li><strong><code>Audio Source_V01-V13 _tanto_ before and after/V05after_20240502_tanto_tanto_02_mono.wav</code></strong>
+    <ul>
+      <li>Audio data for Subject V05 (Music College) after two years of instruction (Z2). Recorded on May 2, 2024.</li>
+    </ul>
+  </li>
+  <li><strong><code>Audio Source_M2025_tanto_tanto_mono.wav</code></strong>
+    <ul>
+      <li>Pedagogical reference model recorded by a professional singer.</li>
+    </ul>
+  </li>
+</ul>
