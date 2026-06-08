@@ -4,7 +4,43 @@ This repository contains a singing voice dataset designed for the acoustic analy
 •	Equipment & Environment: Olympus LS-P2 IC recorder / Vocal lesson room (Microphone-to-subject distance: approx. 2 m)
 •	Audio Format: 44.1 kHz, 16-bit, Mono
 •	Acoustic Analysis Parameters: Analysis window length (frame size) of 2,048 samples
-2. Subjects and Dataset Structure All subjects are soprano singers. For each student subject, audio data was recorded at two distinct stages: Z1 (at admission) and Z2 (after two years of vocal instruction). Subject Groups Group ID N Description Education E01–E07 7 Students in the Music Education Program Music College V01–V13 13 Students majoring in Vocal Performance Reference Model M2025 1 Professional soprano (normative pedagogical model for observing developmental progress)
+2. Subjects and Dataset Structure
+All subjects are **soprano** singers. For each student subject, audio data was recorded at two distinct stages: **Z1 (at admission)** and **Z2 (after two years of vocal instruction)**.
+
+<hr>
+<p><strong>Subject Groups</strong></p>
+
+<table border="0" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; font-weight: bold; text-align: left;">
+      <th style="padding: 8px;">Group</th>
+      <th style="padding: 8px;">ID</th>
+      <th style="padding: 8px;">N</th>
+      <th style="padding: 8px;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px;"><strong>Education</strong></td>
+      <td style="padding: 8px;">E01–E07</td>
+      <td style="padding: 8px;">7</td>
+      <td style="padding: 8px;">Students in the Music Education Program</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px;"><strong>Music College</strong></td>
+      <td style="padding: 8px;">V01–V13</td>
+      <td style="padding: 8px;">13</td>
+      <td style="padding: 8px;">Students majoring in Vocal Performance</td>
+    </tr>
+    <tr style="border-bottom: 2px solid #000;">
+      <td style="padding: 8px;"><strong>Reference Model</strong></td>
+      <td style="padding: 8px;">M2025</td>
+      <td style="padding: 8px;">1</td>
+      <td style="padding: 8px;">Professional soprano (normative pedagogical model for observing developmental progress)</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
 3. Naming Convention
 [Subject ID][Stage]_[Detailed Information].wav
 •	Stage Mapping: before = Z1 (At admission) / after = Z2 (After 2 years of instruction)
