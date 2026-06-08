@@ -4,13 +4,7 @@ This repository contains a singing voice dataset designed for the acoustic analy
 •	Equipment & Environment: Olympus LS-P2 IC recorder / Vocal lesson room (Microphone-to-subject distance: approx. 2 m)
 •	Audio Format: 44.1 kHz, 16-bit, Mono
 •	Acoustic Analysis Parameters: Analysis window length (frame size) of 2,048 samples
-2. Subjects and Dataset Structure
-All subjects are soprano singers. For each student subject, audio data was recorded at two distinct stages: Z1 (at admission) and Z2 (after two years of vocal instruction).
-Subject Groups
-Group	ID	N	Description
-Education	E01–E07	7	Students in the Music Education Program
-Music College	V01–V13	13	Students majoring in Vocal Performance
-Reference Model	M2025	1	Professional soprano (normative pedagogical model for observing developmental progress)
+2. Subjects and Dataset Structure All subjects are soprano singers. For each student subject, audio data was recorded at two distinct stages: Z1 (at admission) and Z2 (after two years of vocal instruction). Subject Groups Group ID N Description Education E01–E07 7 Students in the Music Education Program Music College V01–V13 13 Students majoring in Vocal Performance Reference Model M2025 1 Professional soprano (normative pedagogical model for observing developmental progress)
 3. Naming Convention
 [Subject ID][Stage]_[Detailed Information].wav
 •	Stage Mapping: before = Z1 (At admission) / after = Z2 (After 2 years of instruction)
