@@ -1,9 +1,18 @@
-Singing Voice Dataset
-This repository contains a singing voice dataset designed for the acoustic analysis of vocal developmental stages and the effects of vocal pedagogical intervention. The dataset consists of short audio fragments of the word "tanto" from the Italian art song <Caro mio ben> composed by T. Giordani.
-1. Recording and Acoustic Analysis Conditions
-•	Equipment & Environment: Olympus LS-P2 IC recorder / Vocal lesson room (Microphone-to-subject distance: approx. 2 m)
-•	Audio Format: 44.1 kHz, 16-bit, Mono
-•	Acoustic Analysis Parameters: Analysis window length (frame size) of 2,048 samples
+<h1>Singing Voice Dataset</h1>
+
+<p>This repository contains a singing voice dataset designed for the acoustic analysis of vocal developmental stages and the effects of vocal pedagogical intervention. The dataset consists of short audio fragments of the word &quot;tanto&quot; from the Italian art song &lt;<em>Caro mio ben</em>&gt; composed by T. Giordani.</p>
+
+<hr>
+
+<h2>1. Recording and Acoustic Analysis Conditions</h2>
+
+<ul>
+  <li><strong>Equipment &amp; Environment</strong>: Olympus LS-P2 IC recorder / Vocal lesson room (Microphone-to-subject distance: approx. 2 m)</li>
+  <li><strong>Audio Format</strong>: 44.1 kHz, 16-bit, Mono</li>
+  <li><strong>Acoustic Analysis Parameters</strong>: Analysis window length (frame size) of 2,048 samples</li>
+</ul>
+
+<hr>
 2. Subjects and Dataset Structure
 
 All subjects are **soprano** singers. For each student subject, audio data was recorded at two distinct stages: **Z1 (at admission)** and **Z2 (after two years of vocal instruction)**.
