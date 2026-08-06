@@ -1,0 +1,24 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Audio and analysis outputs
+*.wav
+*.aiff
+*.aif
+*.flac
+*.mp3
+*_q_frames.csv
+
+# Local data folders
+data/
+audio/
+recordings/

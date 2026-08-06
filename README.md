@@ -1,85 +1,129 @@
-<h1>Singing Voice Dataset</h1>
+# Singing Voice Acoustic Metrics in Python
 
-<p>This repository contains a singing voice dataset designed for the acoustic analysis of vocal developmental stages and the effects of vocal pedagogical intervention. The dataset consists of short audio fragments of the word &quot;tanto&quot; from the Italian art song &lt;<em>Caro mio ben</em>&gt; composed by T. Giordani.</p>
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Research code](https://img.shields.io/badge/status-research%20code-6f42c1.svg)](#research-use)
+[![Metrics](https://img.shields.io/badge/acoustic%20metrics-7-2ea44f.svg)](#included-metrics)
 
-<hr>
+Python implementations of seven acoustic measures used in singing-voice
+research and classical singing pedagogy.
 
-<h2>1. Recording and Acoustic Analysis Conditions</h2>
+## Included metrics
 
-<ul>
-  <li><strong>Equipment &amp; Environment</strong>: Olympus LS-P2 IC recorder / Vocal lesson room (Microphone-to-subject distance: approx. 2 m)</li>
-  <li><strong>Audio Format</strong>: 44.1 kHz, 16-bit, Mono</li>
-  <li><strong>Acoustic Analysis Parameters</strong>: Analysis window length (frame size) of 2,048 samples</li>
-</ul>
+| Metric | Main script | Method or reference basis |
+|---|---|---|
+| H1-H2 | [`h1_h2/calculate_h1_h2_holmberg1995.py`](h1_h2/calculate_h1_h2_holmberg1995.py) | Holmberg et al. (1995) |
+| CPPS | [`cpps/calculate_cpps_baker2024.py`](cpps/calculate_cpps_baker2024.py) | Baker et al.; Praat PowerCepstrogram |
+| SFR | [`sfr/calculate_sfr_excel_definition.py`](sfr/calculate_sfr_excel_definition.py) | SFR workbook definition |
+| SPR | [`spr/calculate_spr_omori1996.py`](spr/calculate_spr_omori1996.py) | Omori et al. (1996) |
+| Q value | [`q_value/calculate_q_lpc_jstage2014.py`](q_value/calculate_q_lpc_jstage2014.py) | LPC peak and -3 dB bandwidth |
+| Alpha Ratio | [`alpha_ratio/calculate_alpha_ratio_patel2010.py`](alpha_ratio/calculate_alpha_ratio_patel2010.py) | Patel et al. (2010) |
+| Spectral Centroid | [`spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py`](spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py) | Schubert and Wolfe (2006) |
 
-<hr>
-<h2>2. Subjects and Dataset Structure</h2>
+Each metric folder contains its own `README.md` with the definition, analysis
+settings, requirements, and usage instructions.
 
-<p>All subjects are <strong>soprano</strong> singers. For each student subject, audio data was recorded at two distinct stages: <strong>Z1 (at admission)</strong> and <strong>Z2 (after two years of vocal instruction)</strong>.</p>
+## Repository structure
 
-<hr>
-<p><strong>Subject Groups</strong></p>
+```text
+Program/
+|-- README.md
+|-- requirements.txt
+|-- .gitignore
+|-- h1_h2/
+|   |-- README.md
+|   `-- calculate_h1_h2_holmberg1995.py
+|-- cpps/
+|   |-- README.md
+|   `-- calculate_cpps_baker2024.py
+|-- sfr/
+|   |-- README.md
+|   `-- calculate_sfr_excel_definition.py
+|-- spr/
+|   |-- README.md
+|   `-- calculate_spr_omori1996.py
+|-- q_value/
+|   |-- README.md
+|   `-- calculate_q_lpc_jstage2014.py
+|-- alpha_ratio/
+|   |-- README.md
+|   `-- calculate_alpha_ratio_patel2010.py
+`-- spectral_centroid/
+    |-- README.md
+    `-- calculate_spectral_centroid_schubert_wolfe2006.py
+```
 
-<table border="0" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="border-top: 2px solid #000; border-bottom: 1px solid #000; font-weight: bold; text-align: left;">
-      <th style="padding: 8px;">Group</th>
-      <th style="padding: 8px;">ID</th>
-      <th style="padding: 8px;">N</th>
-      <th style="padding: 8px;">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 8px;"><strong>Education</strong></td>
-      <td style="padding: 8px;">E01–E07</td>
-      <td style="padding: 8px;">7</td>
-      <td style="padding: 8px;">Students in the Music Education Program</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px;"><strong>Music College</strong></td>
-      <td style="padding: 8px;">V01–V13</td>
-      <td style="padding: 8px;">13</td>
-      <td style="padding: 8px;">Students majoring in Vocal Performance</td>
-    </tr>
-    <tr style="border-bottom: 2px solid #000;">
-      <td style="padding: 8px;"><strong>Reference Model</strong></td>
-      <td style="padding: 8px;">M2025</td>
-      <td style="padding: 8px;">1</td>
-      <td style="padding: 8px;">Professional soprano (normative pedagogical model for observing developmental progress)</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
+## Installation
 
-<h2>3. Naming Convention</h2>
+Create a virtual environment and install the tested library versions:
 
-<p>The audio files in this repository are named based on the following convention:</p>
+```bash
+python -m venv .venv
+```
 
-<blockquote>
-  <strong><code>[Subject ID][Stage]_[Detailed Information].wav</code></strong>
-</blockquote>
+Windows PowerShell:
 
-<ul>
-  <li><strong>Stage Mapping</strong>: <code>before</code> = Z1 (At admission) / <code>after</code> = Z2 (After 2 years of instruction)</li>
-  <li><strong>Detailed Information</strong>: Includes the recording date, song fragment identifier (<code>tanto</code>), and channel type (<code>mono</code>).</li>
-</ul>
+```powershell
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
 
-<h3>Examples</h3>
-<ul>
-  <li><strong><code>Audio Source_E01-E07 _tanto_ before and after/E01before_tanto-tanto_20141001_02_mono.wav</code></strong>
-    <ul>
-      <li>Audio data for Subject E01 (Education) at admission (Z1). Recorded on October 1, 2014.</li>
-    </ul>
-  </li>
-  <li><strong><code>Audio Source_V01-V13 _tanto_ before and after/V05after_20240502_tanto_tanto_02_mono.wav</code></strong>
-    <ul>
-      <li>Audio data for Subject V05 (Music College) after two years of instruction (Z2). Recorded on May 2, 2024.</li>
-    </ul>
-  </li>
-  <li><strong><code>Audio Source_M2025_tanto_tanto_mono.wav</code></strong>
-    <ul>
-      <li>Pedagogical reference model recorded by a professional singer.</li>
-    </ul>
-  </li>
-</ul>
+macOS or Linux:
+
+```bash
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Example commands
+
+CPPS:
+
+```bash
+python cpps/calculate_cpps_baker2024.py input.wav --start 0.430 --end 0.930
+```
+
+SPR:
+
+```bash
+python spr/calculate_spr_omori1996.py input.wav --center-sec 0.680
+```
+
+Spectral Centroid:
+
+```bash
+python spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py input.wav
+```
+
+See the README in each metric folder for metric-specific instructions.
+
+## Tested environment
+
+- Python 3.13.5
+- NumPy 2.3.5
+- SciPy 1.17.0
+- SoundFile 0.13.1
+- Librosa 0.11.0
+- Praat-Parselmouth 0.4.7
+- Embedded Praat 6.1.38
+
+## Research use
+
+These scripts are transparent research implementations of methods described in
+the cited literature or analysis definitions. Some source publications do not
+report every internal software setting. Such implementation choices are
+documented in the relevant metric README and source-code comments.
+
+The scripts are not clinical diagnostic software. Users should verify analysis
+intervals, recording conditions, sampling rates, and parameter settings before
+comparing results across recordings or studies.
+
+## Data and privacy
+
+No participant audio recordings are included in this repository. Avoid
+uploading identifiable or restricted research audio unless the relevant
+consent, ethics approval, and data-sharing permissions explicitly allow it.
+
+## Citation
+
+When using a script, cite both this repository and the original methodological
+publication identified in the corresponding metric README.
