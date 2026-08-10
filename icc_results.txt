@@ -1,0 +1,26 @@
+Table 4A inter-rater reliability
+Targets: 20
+Raters: 4
+
+Model: two-way random effects, absolute agreement
+Single measure: ICC(2,1) / ICC(A,1)
+Average measure: ICC(2,k) / ICC(A,k), k=4
+
+ICC(2,1) = 0.403943830
+95% CI = [0.162135644, 0.655496789]
+
+ICC(2,k) = 0.730514656
+95% CI = [0.436315630, 0.883868421]
+
+F(19, 57) = 5.329863891
+p = 4.31252427403e-07
+
+ANOVA mean squares
+MS_targets = 1.459868421053
+MS_raters = 3.545833333333
+MS_error = 0.273903508772
+
+Environment used to generate/check this output
+Python = 3.13.5
+NumPy = 2.3.5
+SciPy = 1.17.0
