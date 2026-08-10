@@ -63,6 +63,8 @@ Program/
 ├── requirements.txt
 └── README.md
 ```
+The data/ directory contains the de-identified participant-level and rater-level data supporting the revised manuscript. The ICC_Table4A/ directory contains the complete 20 × 4 rating matrix and a reproducible Python implementation of the inter-rater reliability analysis. Participant audio recordings and the M2025 reference recording are also publicly available in this repository.
+
 ## Installation
 
 Create a virtual environment and install the tested library versions:
