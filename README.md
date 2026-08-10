@@ -119,9 +119,11 @@ comparing results across recordings or studies.
 
 ## Data and privacy
 
-No participant audio recordings are included in this repository. Avoid
-uploading identifiable or restricted research audio unless the relevant
-consent, ethics approval, and data-sharing permissions explicitly allow it.
+Participant audio recordings used in this study are included in this repository. Public sharing of the audio recordings is permitted under the participants' consent and the approved ethical conditions.
+
+The repository also provides de-identified rater-level ratings and evaluative-term annotations, participant-level acoustic-feature data, M2025 reference data, path-normalized DTW results, analysis scripts, package information, and reproducibility documentation.
+
+The de-identified tabular data supporting the revised manuscript are available in the `data/` directory. Reproducible inter-rater reliability data and code are available in the `ICC_Table4A/` directory.
 
 ## Citation
 
