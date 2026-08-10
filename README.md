@@ -26,31 +26,42 @@ settings, requirements, and usage instructions.
 
 ```text
 Program/
-|-- README.md
-|-- requirements.txt
-|-- .gitignore
-|-- h1_h2/
-|   |-- README.md
-|   `-- calculate_h1_h2_holmberg1995.py
-|-- cpps/
-|   |-- README.md
-|   `-- calculate_cpps_baker2024.py
-|-- sfr/
-|   |-- README.md
-|   `-- calculate_sfr_excel_definition.py
-|-- spr/
-|   |-- README.md
-|   `-- calculate_spr_omori1996.py
-|-- q_value/
-|   |-- README.md
-|   `-- calculate_q_lpc_jstage2014.py
-|-- alpha_ratio/
-|   |-- README.md
-|   `-- calculate_alpha_ratio_patel2010.py
-`-- spectral_centroid/
-    |-- README.md
-    `-- calculate_spectral_centroid_schubert_wolfe2006.py
-```
+├── Audio Source_E01-E07_tanto_before and after/
+│   └── Participant audio files for E01-E07
+│
+├── Audio Source_V01-V13_tanto_before and after/
+│   └── Participant audio files for V01-V13
+│
+├── Audio Source_M2025_tanto_tanto_mono.wav
+│   └── Audio recording used as the M2025 pedagogical reference
+│
+├── data/
+│   ├── README.md
+│   ├── 01_rater_scores_and_terms.csv
+│   ├── 02_acoustic_features_Z1_Z2.csv
+│   ├── 03_M2025_acoustic_data.csv
+│   └── 04_normalized_DTW_results.csv
+│
+├── ICC_Table4A/
+│   ├── README_ICC.md
+│   ├── table4a_ratings.csv
+│   ├── icc_table4a.py
+│   ├── icc_results.txt
+│   └── requirements_icc.txt
+│
+├── calculate_alpha_ratio_patel2010.py
+├── calculate_cpps_baker2024.py
+├── calculate_h1_h2_holmberg1995.py
+├── calculate_q_lpc_jstage2014.py
+├── calculate_sfr_excel_definition.py
+├── calculate_spectral_centroid_*.py
+├── calculate_spr_omori1996.py
+│
+├── README (1).md ... README (7).md
+│   └── Measure-specific documentation
+│
+├── requirements.txt
+└── README.md
 
 ## Installation
 
