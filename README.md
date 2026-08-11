@@ -136,21 +136,16 @@ The analysis scripts were tested with the following software and library version
 - SciPy 1.17.0
 - SoundFile 0.13.1
 - Librosa 0.11.0
-- Praat-Parselmouth 0.4.7
+- Praat-Parselmouth 0.4.7 (embedded Praat 6.1.38)
 - Praat 6.4.27 (used for manual audio inspection and mono conversion)
 
 The package versions required for the acoustic-analysis scripts are also specified in `requirements.txt`. The ICC analysis has its own reproducibility environment documented in `ICC_Table4A/requirements_icc.txt`.
 
 ## Research use
 
-These scripts are transparent research implementations of methods described in
-the cited literature or analysis definitions. Some source publications do not
-report every internal software setting. Such implementation choices are
-documented in the relevant metric README and source-code comments.
+These scripts provide transparent and reproducible research implementations of the acoustic measures used in the revised manuscript. The implemented definitions, analysis intervals, parameter settings, and relevant methodological choices are documented in the corresponding metric-specific `README.md` files and source-code comments.
 
-The scripts are not clinical diagnostic software. Users should verify analysis
-intervals, recording conditions, sampling rates, and parameter settings before
-comparing results across recordings or studies.
+The acoustic measures are intended as descriptive measures of specific properties of the recorded signal. They should not be interpreted as direct measurements of physiological states, clinical diagnostic criteria, or independent criteria of pedagogical quality or vocal development. Users should verify analysis intervals, recording conditions, sampling rates, and parameter settings before comparing results across recordings, participants, or studies.
 
 ## Data and privacy
 
