@@ -110,19 +110,19 @@ pip install -r requirements.txt
 CPPS:
 
 ```bash
-python cpps/calculate_cpps_baker2024.py input.wav --start 0.430 --end 0.930
+python acoustic_metrics/cpps/calculate_cpps_baker2024.py input.wav --start 0.430 --end 0.930
 ```
 
 SPR:
 
 ```bash
-python spr/calculate_spr_omori1996.py input.wav --center-sec 0.680
+python acoustic_metrics/spr/calculate_spr_omori1996.py input.wav --center-sec 0.680
 ```
 
 Spectral Centroid:
 
 ```bash
-python spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py input.wav
+python acoustic_metrics/spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py input.wav
 ```
 
 See the README in each metric folder for metric-specific instructions.
