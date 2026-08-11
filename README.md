@@ -11,14 +11,13 @@ research and classical singing pedagogy.
 
 | Metric | Main script | Method or reference basis |
 |---|---|---|
-| H1-H2 | [`h1_h2/calculate_h1_h2_holmberg1995.py`](h1_h2/calculate_h1_h2_holmberg1995.py) | Holmberg et al. (1995) |
-| CPPS | [`cpps/calculate_cpps_baker2024.py`](cpps/calculate_cpps_baker2024.py) | Baker et al.; Praat PowerCepstrogram |
-| SFR | [`sfr/calculate_sfr_excel_definition.py`](sfr/calculate_sfr_excel_definition.py) | SFR workbook definition |
-| SPR | [`spr/calculate_spr_omori1996.py`](spr/calculate_spr_omori1996.py) | Omori et al. (1996) |
-| Q value | [`q_value/calculate_q_lpc_jstage2014.py`](q_value/calculate_q_lpc_jstage2014.py) | LPC peak and -3 dB bandwidth |
-| Alpha Ratio | [`alpha_ratio/calculate_alpha_ratio_patel2010.py`](alpha_ratio/calculate_alpha_ratio_patel2010.py) | Patel et al. (2010) |
-| Spectral Centroid | [`spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py`](spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py) | Schubert and Wolfe (2006) |
-
+| H1-H2 | [`acoustic_metrics/h1_h2/calculate_h1_h2_holmberg1995.py`](acoustic_metrics/h1_h2/calculate_h1_h2_holmberg1995.py) | Holmberg et al. (1995) |
+| CPPS | [`acoustic_metrics/cpps/calculate_cpps_baker2024.py`](acoustic_metrics/cpps/calculate_cpps_baker2024.py) | Baker et al.; Praat PowerCepstrogram |
+| SFR | [`acoustic_metrics/sfr/calculate_sfr_excel_definition.py`](acoustic_metrics/sfr/calculate_sfr_excel_definition.py) | SFR workbook definition |
+| SPR | [`acoustic_metrics/spr/calculate_spr_omori1996.py`](acoustic_metrics/spr/calculate_spr_omori1996.py) | Omori et al. (1996) |
+| Q value | [`acoustic_metrics/q_value/calculate_q_lpc_jstage2014.py`](acoustic_metrics/q_value/calculate_q_lpc_jstage2014.py) | LPC peak and -3 dB bandwidth |
+| Alpha Ratio | [`acoustic_metrics/alpha_ratio/calculate_alpha_ratio_patel2010.py`](acoustic_metrics/alpha_ratio/calculate_alpha_ratio_patel2010.py) | Patel et al. (2010) |
+| Spectral Centroid | [`acoustic_metrics/spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py`](acoustic_metrics/spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py) | Schubert and Wolfe (2006) |
 Each metric folder contains its own `README.md` with the definition, analysis
 settings, requirements, and usage instructions.
 
