@@ -10,15 +10,8 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Audio and analysis outputs
-*.wav
-*.aiff
-*.aif
-*.flac
-*.mp3
-*_q_frames.csv
-
-# Local data folders
-data/
-audio/
+# Temporary files
+*.tmp
+*.temp
+*~
 recordings/
