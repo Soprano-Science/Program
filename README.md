@@ -157,5 +157,12 @@ The de-identified tabular data supporting the revised manuscript are available i
 
 ## Citation
 
-When using a script, cite both this repository and the original methodological
-publication identified in the corresponding metric README.
+When using the data or analysis scripts from this repository, please cite the associated manuscript and this repository:
+
+**Soprano-Science. Program: Singing Voice Acoustic Metrics and Reproducibility Data. GitHub repository.**
+
+https://github.com/Soprano-Science/Program
+
+For individual acoustic measures, please also cite the original methodological publication identified in the corresponding metric-specific `README.md`.
+
+After publication of the associated article, the final journal citation should be used together with the repository citation.
