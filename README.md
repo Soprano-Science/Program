@@ -129,13 +129,17 @@ See the README in each metric folder for metric-specific instructions.
 
 ## Tested environment
 
+The analysis scripts were tested with the following software and library versions:
+
 - Python 3.13.5
 - NumPy 2.3.5
 - SciPy 1.17.0
 - SoundFile 0.13.1
 - Librosa 0.11.0
 - Praat-Parselmouth 0.4.7
-- Embedded Praat 6.1.38
+- Praat 6.4.27 (used for manual audio inspection and mono conversion)
+
+The package versions required for the acoustic-analysis scripts are also specified in `requirements.txt`. The ICC analysis has its own reproducibility environment documented in `ICC_Table4A/requirements_icc.txt`.
 
 ## Research use
 
