@@ -18,6 +18,7 @@ research and classical singing pedagogy.
 | Q value | [`acoustic_metrics/q_value/calculate_q_lpc_jstage2014.py`](acoustic_metrics/q_value/calculate_q_lpc_jstage2014.py) | LPC peak and -3 dB bandwidth |
 | Alpha Ratio | [`acoustic_metrics/alpha_ratio/calculate_alpha_ratio_patel2010.py`](acoustic_metrics/alpha_ratio/calculate_alpha_ratio_patel2010.py) | Patel et al. (2010) |
 | Spectral Centroid | [`acoustic_metrics/spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py`](acoustic_metrics/spectral_centroid/calculate_spectral_centroid_schubert_wolfe2006.py) | Schubert and Wolfe (2006) |
+
 Each metric folder contains its own `README.md` with the definition, analysis
 settings, requirements, and usage instructions.
 
