@@ -42,15 +42,26 @@ def calculate_alpha_ratio(
     audio: np.ndarray,
     sample_rate: int,
 ) -> dict[str, float]:
-    """Calculate Patel et al.'s alpha ratio from an LTAS estimate.
+    
+"""Calculate the alpha-ratio measure from an LTAS estimate using the
+frequency bands described by Patel et al. (2010).
 
-    The orientation is high-frequency energy divided by low-frequency
-    energy, because Patel et al. state that a higher alpha value indicates
-    a shallower spectral slope.
+Alpha ratio was defined in this study as:
 
-    alpha_linear = E(1-5 kHz) / E(50-1000 Hz)
+    alpha_linear = E(50–1000 Hz) / E(1–5 kHz)
     alpha_dB = 10 * log10(alpha_linear)
-    """
+
+Thus, the orientation used in this study is low-frequency energy
+divided by high-frequency energy. Accordingly, lower alpha-ratio
+values indicate relatively greater high-frequency energy in the
+1–5-kHz band.
+
+Because the direction of the alpha-ratio convention is not always
+stated consistently in the literature, the numerator and denominator
+are specified explicitly here. The measure is interpreted
+descriptively as a measure of spectral energy balance and not as a
+direct physiological measure.
+"""
 
     frequencies, psd = welch(
         audio,
