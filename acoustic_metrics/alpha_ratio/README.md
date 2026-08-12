@@ -1,17 +1,17 @@
 # Alpha Ratio
 
-This directory contains `calculate_alpha_ratio_patel2010.py`, a reproducible Python implementation of the alpha-ratio measure using the 50–1000 Hz and 1–5 kHz frequency bands used by Patel et al. (2010). In this repository, the ratio is explicitly defined using a high-to-low energy convention.
+This directory contains `calculate_alpha_ratio_patel2010.py`, a reproducible Python implementation of the alpha-ratio measure using the 50–1000 Hz and 1–5 kHz frequency bands described by Patel et al. (2010). In this repository, alpha ratio is explicitly defined as the low-frequency-to-high-frequency spectral-energy ratio.
 
 ## Definition used in the script
 
-Alpha Ratio (dB) = 10 * log10(E_high / E_low)
+`Alpha Ratio (dB) = 10 * log10(E_low / E_high)`
 
-- `E_low`: summed energy from 50 to below 1000 Hz
-- `E_high`: summed energy from 1000 to 5000 Hz
+- `E_low`: summed spectral energy from 50 Hz to below 1000 Hz
+- `E_high`: summed spectral energy from 1000 Hz to 5000 Hz
 
-Under this convention, a higher Alpha Ratio indicates relatively greater high-frequency energy (1–5 kHz) compared with low-frequency energy (50–1000 Hz), whereas a lower value indicates relatively less high-frequency energy.
+Under this convention, a lower alpha-ratio value indicates relatively greater high-frequency energy in the 1–5 kHz band compared with low-frequency energy in the 50–1000 Hz band, whereas a higher value indicates relatively greater low-frequency energy.
 
-Because the direction of the ratio is not always stated consistently across the literature, the numerator and denominator are explicitly defined here. The measure is used descriptively and is not interpreted as a direct physiological measure.
+Because the direction of the alpha-ratio convention is not always stated consistently across the literature, the numerator and denominator are explicitly defined here. The measure is used descriptively as a measure of spectral energy balance and is not interpreted as a direct measure of glottal adduction or any other physiological state.
 
 ## LTAS implementation
 
