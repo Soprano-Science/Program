@@ -86,7 +86,7 @@ Program/
 └── requirements.txt
 ```
 
-The `acoustic_metrics/` directory contains a dedicated subdirectory for each of the seven acoustic measures, with the corresponding analysis script and measure-specific `README.md`. The `data/` directory contains the de-identified participant-level and rater-level data supporting the revised manuscript. The `ICC_Table4A/` directory contains the complete 20 × 4 rating matrix and a reproducible Python implementation of the inter-rater reliability analysis. Participant audio recordings and the M2025 pedagogical reference recording are also publicly available in this repository.
+The `acoustic_metrics/` directory contains a dedicated subdirectory for each of the seven acoustic measures, with the corresponding analysis script and measure-specific `README.md`. The `normalized_dtw/` directory contains the reproducible path-normalized DTW implementation, its methodological documentation, and an example long-format input file. The `data/` directory contains the de-identified participant-level and rater-level data supporting the revised manuscript, including the participant-level normalized DTW results. The `ICC_Table4A/` directory contains the complete 20 × 4 rating matrix and a reproducible Python implementation of the inter-rater reliability analysis. Participant audio recordings and the M2025 pedagogical reference recording are also publicly available in this repository.
 
 ## Installation
 
