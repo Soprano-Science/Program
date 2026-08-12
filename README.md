@@ -68,6 +68,11 @@ Program/
 │       ├── README.md
 │       └── calculate_spr_omori1996.py
 │
+├── normalized_dtw/
+│   ├── README.md
+│   ├── calculate_path_normalized_dtw.py
+│   └── example_time_series_long.csv
+│
 ├── data/
 │   ├── README.md
 │   ├── 01_rater_scores_and_terms.csv
