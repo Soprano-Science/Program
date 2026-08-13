@@ -95,7 +95,7 @@ direct physiological measure.
     if low_energy <= 0.0 or high_energy <= 0.0:
         raise ValueError("Band energy must be positive.")
 
-    alpha_linear = high_energy / low_energy
+    alpha_linear = low_energy / high_energy
     alpha_db = 10.0 * np.log10(alpha_linear)
 
     return {
