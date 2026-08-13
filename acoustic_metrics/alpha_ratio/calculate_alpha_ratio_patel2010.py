@@ -148,11 +148,11 @@ def main() -> None:
     print()
 
     print("[Alpha ratio]")
-    print(f"Linear E_high/E_low: {result['alpha_linear']:.15f}")
+    print(f"Linear E_low/E_high: {result['alpha_linear']:.15f}")
     print(f"Alpha ratio:         {result['alpha_db']:.12f} dB")
     print()
-    print("For the inverse low/high convention:")
-    print(f"Linear E_low/E_high: {result['inverse_linear']:.15f}")
+    print("For the inverse high/low convention:")
+    print(f"Linear E_high/E_low: {result['inverse_linear']:.15f}")
     print(f"Inverse dB value:    {result['inverse_db']:.12f} dB")
 
 
