@@ -1,0 +1,15 @@
+﻿Item,Value
+Python,3.13.5
+NumPy,2.3.5
+Input root,/mnt/data/Acoustic_Analysis_Results_2026-08-18/08_DTW_SFR_Q/input
+Output dir,/mnt/data/Acoustic_Analysis_Results_2026-08-18/08_DTW_SFR_Q/results
+Metrics,"SFR,Q_value"
+Local cost,absolute difference abs(x_i - y_j)
+Permitted steps,"diagonal, vertical, horizontal"
+Global warping window,none
+Distance normalization,cumulative cost divided by optimal path length
+Delta convention,"Delta_Z2_minus_Z1 = DTWnorm(M2025,Z2) - DTWnorm(M2025,Z1)"
+Negative delta,distance decreased: approach toward M2025 at Z2
+Positive delta,distance increased: divergence from M2025 at Z2
+Frame inclusion,only rows with include_in_median=True and finite metric values
+Plot x-axis,"normalized_frame_position, not clock time"
