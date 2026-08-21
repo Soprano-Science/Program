@@ -1,0 +1,155 @@
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V10before_20220420_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V10before_20220420_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.735338 dB
+  voiced frames             : 44/45
+  WARNING: 1 unvoiced/low-periodicity frame(s) detected.
+           Frame indices: 2
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V10before_20220420_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V10after_20240501_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V10after_20240501_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.730860 dB
+  voiced frames             : 46/46
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V10after_20240501_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V11after_20240502_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V11after_20240502_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 12.578528 dB
+  voiced frames             : 52/52
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V11after_20240502_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V09before_20170526_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V09before_20170526_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.239097 dB
+  voiced frames             : 62/62
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V09before_20170526_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V12after_20190408_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V12after_20190408_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.136546 dB
+  voiced frames             : 39/39
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V12after_20190408_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V11before_20220420_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V11before_20220420_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.382121 dB
+  voiced frames             : 52/52
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V11before_20220420_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V12before_20170508_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V12before_20170508_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.434400 dB
+  voiced frames             : 45/45
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V12before_20170508_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V13after_20190409_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V13after_20190409_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.706430 dB
+  voiced frames             : 44/44
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V13after_20190409_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
+Frame-wise CPPS calculation
+---------------------------
+Input path : /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V13before_20170508_tanto_tanto_02_mono.wav
+Output dir : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS
+WAV files  : 1
+Frame size : 2048 samples
+Hop size   : 2048 samples
+
+File: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V13before_20170508_tanto_tanto_02_mono.wav
+  sampling rate             : 44100 Hz
+  frame duration            : 46.439909 ms
+  median CPPS, all frames   : 11.702830 dB
+  voiced frames             : 42/42
+  frame-wise CSV            : /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/V13before_20170508_tanto_tanto_02_mono_cpps_framewise.csv
+
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/02_CPPS/cpps_summary.csv
+Primary value for each file: median_cpps_all_frames_db
