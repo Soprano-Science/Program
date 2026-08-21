@@ -1,0 +1,143 @@
+--- "/mnt/data/acoustic_work/programs/Acourstic Analysis Programs/DTW_SFR_Q/calculate_path_normalized_dtw_sfr_q.py"	2026-08-16 20:59:36.000000000 +0000
++++ /mnt/data/Acoustic_Analysis_Results_2026-08-18/08_DTW_SFR_Q/program/calculate_path_normalized_dtw_sfr_q_corrected.py	2026-08-17 22:14:07.314810392 +0000
+@@ -13,8 +13,8 @@
+ ------------
+ 1. SFR_Q_DTW_distance_delta_summary.csv
+    DTWnorm(M2025, Z1), DTWnorm(M2025, Z2), and
+-   Delta_Z1_minus_Z2 = DTWnorm(Z1, M2025) - DTWnorm(Z2, M2025).
+-   Positive delta means Z2 is closer to M2025 than Z1 is.
++   Delta_Z2_minus_Z1 = DTWnorm(Z2, M2025) - DTWnorm(Z1, M2025).
++   Negative delta means Z2 is closer to M2025 than Z1 is; positive delta means greater distance.
+ 
+ 2. SFR_Q_valid_frame_series_normalized_position.csv
+    Valid frame-wise SFR and Q-value series for M2025, Z1, and Z2.  The x-axis
+@@ -48,9 +48,9 @@
+     │   ├── E01after_..._sfr_framewise.csv
+     │   └── M2025_..._sfr_framewise.csv
+     └── q_value/
+-        ├── E01before_..._q_lpc_framewise.csv
+-        ├── E01after_..._q_lpc_framewise.csv
+-        └── M2025_..._q_lpc_framewise.csv
++        ├── E01before_..._Y_Q_value_framewise.csv
++        ├── E01after_..._Y_Q_value_framewise.csv
++        └── M2025_..._Y_Q_value_framewise.csv
+ 
+ The frame-wise CSVs must include:
+     frame_index, start_time_s, end_time_s, include_in_median,
+@@ -113,7 +113,7 @@
+     },
+     "Q_value": {
+         "directory": "q_value",
+-        "glob": "*_q_lpc_framewise.csv",
++        "glob": "*_Y_Q_value_framewise.csv",
+         "value_column": "q_value",
+         "y_label": "Q value",
+         "summary_prefix": "Q_value",
+@@ -322,11 +322,16 @@
+ 
+ 
+ def direction(delta: float | None, *, tolerance: float = 0.0) -> str:
++    """Interpret Delta = DTWnorm(Z2) - DTWnorm(Z1).
++
++    Negative delta means the distance to M2025 decreased (approach).
++    Positive delta means the distance increased (divergence).
++    """
+     if delta is None or not math.isfinite(delta):
+         return "not_computed"
+-    if delta > tolerance:
+-        return "approach"
+     if delta < -tolerance:
++        return "approach"
++    if delta > tolerance:
+         return "divergence"
+     return "unchanged"
+ 
+@@ -410,7 +415,7 @@
+                 "Z2_cumulative_cost": "",
+                 "Z2_path_length": "",
+                 "Z2_DTWnorm": "",
+-                "Delta_Z1_minus_Z2": "",
++                "Delta_Z2_minus_Z1": "",
+                 "Direction": "not_computed",
+                 "Status": "",
+             }
+@@ -439,7 +444,7 @@
+                 z2_values = finite_values(z2_points, label=f"{metric} {subject} Z2")
+                 r1 = path_normalized_dtw(ref_values, z1_values)
+                 r2 = path_normalized_dtw(ref_values, z2_values)
+-                delta = r1.normalized_distance - r2.normalized_distance
++                delta = r2.normalized_distance - r1.normalized_distance
+                 row.update(
+                     {
+                         "Z1_cumulative_cost": format_float(r1.cumulative_cost, 12),
+@@ -448,7 +453,7 @@
+                         "Z2_cumulative_cost": format_float(r2.cumulative_cost, 12),
+                         "Z2_path_length": str(r2.path_length),
+                         "Z2_DTWnorm": format_float(r2.normalized_distance, 12),
+-                        "Delta_Z1_minus_Z2": format_float(delta, 12),
++                        "Delta_Z2_minus_Z1": format_float(delta, 12),
+                         "Direction": direction(delta, tolerance=tolerance),
+                         "Status": "computed",
+                     }
+@@ -524,7 +529,7 @@
+         "Z2_cumulative_cost",
+         "Z2_path_length",
+         "Z2_DTWnorm",
+-        "Delta_Z1_minus_Z2",
++        "Delta_Z2_minus_Z1",
+         "Direction",
+         "Status",
+     ]
+@@ -541,12 +546,12 @@
+     by_key = {(row["Subject"], row["Metric"]): row for row in summary_rows}
+     fieldnames = [
+         "Subject",
+-        "SFR_Delta_Z1_minus_Z2",
++        "SFR_Delta_Z2_minus_Z1",
+         "SFR_Sign",
+         "SFR_Direction",
+         "SFR_Z1_DTWnorm",
+         "SFR_Z2_DTWnorm",
+-        "Q_value_Delta_Z1_minus_Z2",
++        "Q_value_Delta_Z2_minus_Z1",
+         "Q_value_Sign",
+         "Q_value_Direction",
+         "Q_value_Z1_DTWnorm",
+@@ -560,20 +565,20 @@
+         def sign_for(row: dict[str, str]) -> str:
+             direction_value = row.get("Direction", "")
+             if direction_value == "approach":
+-                return "+"
+-            if direction_value == "divergence":
+                 return "-"
++            if direction_value == "divergence":
++                return "+"
+             if direction_value == "unchanged":
+                 return "0"
+             return "NA"
+         rows.append({
+             "Subject": subject,
+-            "SFR_Delta_Z1_minus_Z2": sfr.get("Delta_Z1_minus_Z2", ""),
++            "SFR_Delta_Z2_minus_Z1": sfr.get("Delta_Z2_minus_Z1", ""),
+             "SFR_Sign": sign_for(sfr),
+             "SFR_Direction": sfr.get("Direction", ""),
+             "SFR_Z1_DTWnorm": sfr.get("Z1_DTWnorm", ""),
+             "SFR_Z2_DTWnorm": sfr.get("Z2_DTWnorm", ""),
+-            "Q_value_Delta_Z1_minus_Z2": qv.get("Delta_Z1_minus_Z2", ""),
++            "Q_value_Delta_Z2_minus_Z1": qv.get("Delta_Z2_minus_Z1", ""),
+             "Q_value_Sign": sign_for(qv),
+             "Q_value_Direction": qv.get("Direction", ""),
+             "Q_value_Z1_DTWnorm": qv.get("Z1_DTWnorm", ""),
+@@ -737,9 +742,9 @@
+         {"Item": "Permitted steps", "Value": "diagonal, vertical, horizontal"},
+         {"Item": "Global warping window", "Value": "none"},
+         {"Item": "Distance normalization", "Value": "cumulative cost divided by optimal path length"},
+-        {"Item": "Delta convention", "Value": "Delta_Z1_minus_Z2 = DTWnorm(M2025,Z1) - DTWnorm(M2025,Z2)"},
+-        {"Item": "Positive delta", "Value": "approach toward M2025 at Z2"},
+-        {"Item": "Negative delta", "Value": "divergence from M2025 at Z2"},
++        {"Item": "Delta convention", "Value": "Delta_Z2_minus_Z1 = DTWnorm(M2025,Z2) - DTWnorm(M2025,Z1)"},
++        {"Item": "Negative delta", "Value": "distance decreased: approach toward M2025 at Z2"},
++        {"Item": "Positive delta", "Value": "distance increased: divergence from M2025 at Z2"},
+         {"Item": "Frame inclusion", "Value": "only rows with include_in_median=True and finite metric values"},
+         {"Item": "Plot x-axis", "Value": "normalized_frame_position, not clock time"},
+     ]
