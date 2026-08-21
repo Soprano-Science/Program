@@ -1,0 +1,45 @@
+Acoustic analysis batch run
+Date: 2026-08-18
+
+Input
+- 41 mono WAV files: 20 participants x Z1/Z2 + M2025 reference.
+- Sampling rate confirmed: 44,100 Hz for all files.
+- Frame size = hop size = 2048 samples (non-overlapping; about 46.44 ms).
+
+Final partial-frame rule
+- Every original WAV had a final remainder shorter than 2048 samples.
+- These final partial frames were recorded in final_partial_frame_log.csv and were NOT analyzed.
+- Analysis was performed on exact full-frame copies only; original uploaded WAV files were not modified.
+- Total full 2048-sample frames analyzed across 41 files: 2072.
+
+Metrics
+- Alpha Ratio: provided program defaults.
+- CPPS: provided program defaults.
+- H1-H2: provided program defaults.
+- SFR: provided program defaults; 2.4-4.0 kHz numerator / 0-4.0 kHz denominator.
+- SPR: provided program defaults.
+- Spectral Centroid: provided program defaults.
+- Y_Q_value: LPC order 12; 2.4-4.0 kHz peak search; -3 dB bandwidth; provided program defaults.
+
+DTW
+- Reference: M2025.
+- Local cost: absolute difference.
+- Permitted steps: diagonal, vertical, horizontal.
+- Normalized distance: cumulative absolute cost / optimal path length.
+- Change convention used here: Delta = DTWnorm(Z2) - DTWnorm(Z1).
+  Negative = distance decreased (approach to M2025).
+  Positive = distance increased (divergence from M2025).
+
+Compatibility corrections made to a COPY of the provided DTW script only
+1. Q input filename glob changed from *_q_lpc_framewise.csv to *_Y_Q_value_framewise.csv, matching Y_Q_value.py output.
+2. Delta label/sign convention changed from Z1-Z2 to Z2-Z1 to match the manuscript convention: negative=approach, positive=divergence.
+- Core DTW recurrence, local cost, path construction, and path-length normalization were not changed.
+
+Current DTW result counts
+- SFR: {'approach': 12, 'divergence': 8}
+- Q_value: {'approach': 11, 'divergence': 8, 'not_computed': 1}
+- Q_value for E03 Z1 has zero valid Q frames under the fixed 2.4-4.0 kHz settings, so E03 Q-DTW is not computed.
+
+Validation
+- All seven metric outputs contain exactly the expected full 2048-sample frame count and identical frame boundaries for every file.
+- See 09_Consolidated/frame_alignment_validation.csv.
