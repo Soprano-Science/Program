@@ -1,0 +1,28 @@
+﻿Code,Italian label,Contextual English gloss,Note
+S01,non forzare la voce,voice produced with less apparent forcing,Perceived/inferred reduction in forcing or tension; no direct physiological measurement is implied.
+S02,voce non ingolata (aperta),"less throaty or constricted, more open-sounding voice",Pedagogical contrast to a throaty/constricted sound; not an anatomical definition of an 'open throat'.
+S03,voce morbida,"softer, more supple vocal quality",A perceptual/timbral descriptor; 'soft' here does not simply mean lower loudness.
+S04,voce non soffiata,"less breathy, with reduced audible air leakage",Perceptual breathiness; not a direct measurement of airflow or glottal closure.
+S05,laringe abbassata (si ritiene),production perceived as involving a lower laryngeal setting,"Internal laryngeal action is perceived/inferred, not directly measured."
+S06,chiusura cordale,"sound consistent with firmer vocal-fold closure and a stronger, fuller tone",Vocal-fold closure is inferred from the sound; it was not directly observed or measured.
+S07,la bocca si apre bene,more adequate and released mouth opening,The adequacy of mouth opening is perceived/inferred in the pedagogical context; it was not quantified.
+S08,intonazione giusta,more accurate intonation,Refers to perceived improvement in pitch accuracy.
+S09,vibrato naturale,"more natural, well-formed vibrato",Perceptual evaluation of vibrato quality; not an operational definition of a vibrato metric.
+S10,giusta posizione delle vocali,more appropriate vowel placement and articulation,"'Position' is a pedagogical/articulatory concept, not a fixed anatomical coordinate."
+R01,sentire della risonanza,greater awareness or sensation of resonance,A pedagogical sensation/awareness of resonance; not a direct measurement of resonating cavities.
+R02,voce risonante,more resonant vocal quality,Perceptual resonance quality; not defined by a single acoustic variable.
+R03,si alza il palato molle,production perceived as involving a raised soft palate,"Soft-palate action is perceived/inferred, not directly measured."
+R04,più voluminoso,greater vocal fullness or apparent volume,'Voluminoso' can imply fullness as well as apparent volume; no calibrated SPL measurement is implied.
+R05,non è più chiusa dentro,"less inward or muffled, more open-sounding voice",A pedagogical/perceptual description of reduced inward or muffled quality.
+R06,innalzamento del punto di risonanza,resonance perceived at a higher position,"Resonance 'position' is a pedagogical percept or image, not a literal anatomical location."
+R07,voce in maschera,"more forward, 'in-the-mask' resonance","Traditional bel canto term retained; the gloss indicates a perceived forward resonance, not a literal anatomical site."
+R08,voce che arriva lontano,voice with greater carrying power or projection,Perceived projection/carrying quality; it was not measured at a physical distance.
+R09,diventata più chiara,brighter vocal timbre,Perceptual brightness; not equated a priori with spectral centroid or any single acoustic measure.
+R10,voce profonda,greater depth and richness of vocal timbre,Perceptual timbral depth; not equated with lower pitch or a single spectral measure.
+R11,voce non nasale,less nasal vocal quality,Perceptual nasality; no nasalance measurement is implied.
+R12,unificazione delle cinque vocali,more unified and consistent resonance across the five vowels,Pedagogical consistency across vowels; does not imply that the vowels become acoustically identical.
+P01,respirazione costo-diaframmatica,breathing perceived as more effectively costo-diaphragmatic,Respiratory action is perceived/inferred; no direct respiratory measurement is implied.
+P02,sul fiato,voice carried on a well-coordinated breath flow,"Traditional bel canto term retained; this is a contextual gloss of voice-breath coordination, not a literal or operational definition."
+P03,buon controllo del respiro,better control and management of the breath,Functional/pedagogical breath control; not a direct airflow measurement.
+P04,buon appoggio,more stable appoggio and breath-support coordination,Traditional bel canto term retained; the gloss does not reduce appoggio to a single physiological mechanism.
+P05,buon flusso del fiato,more continuous and well-coordinated breath flow,Perceived/functional breath flow; not a direct airflow measurement.
