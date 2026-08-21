@@ -1,0 +1,84 @@
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E01after_tanto-tanto_20160401_caro-mio-ben_01_mono.wav
+  median=2007.980499 Hz, IQR=385.530686 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E01before_tanto-tanto_20141001_02_mono.wav
+  median=2211.756104 Hz, IQR=604.339649 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E02after_20160401_tanto-tanto_01_44100_mono.wav
+  median=1463.091976 Hz, IQR=110.612326 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E02before_20141001_tanto-tanto_01_44100_mono.wav
+  median=1578.534597 Hz, IQR=435.193534 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E03after_tanto-tanto_20240223_caro-mio-ben_02_mono.wav
+  median=2246.129108 Hz, IQR=623.737778 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E03before_tanto-tanto_20220607_caro-mio-ben_02_1__mono.wav
+  median=1862.983141 Hz, IQR=450.481137 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E04after_20240223_tanto-tanto_02_mono.wav
+  median=2050.822678 Hz, IQR=559.736593 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E04before_20220607_tanto-tanto_02_mono.wav
+  median=1659.116579 Hz, IQR=500.390857 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E05after_tanto-tanto240206_0629caro-2_mono.wav
+  median=1907.577335 Hz, IQR=353.803754 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E05before_tanto-tanto_20220531_caro-mio-ben_02_mono.wav
+  median=1513.366414 Hz, IQR=368.015472 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E06after_tanto-tanto240206_caro-mio-ben_02_mono.wav
+  median=2012.287935 Hz, IQR=648.205664 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E06before_tanto-tanto_20220607_caro-mio-ben_02_mono.wav
+  median=1332.060210 Hz, IQR=275.372895 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E07after_tanto-tanto_240206_caro-mio-ben_02_mono.wav
+  median=2018.464410 Hz, IQR=341.026821 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/E07before_tanto-tanto_20220531_caro-mio-ben_02_mono.wav
+  median=1903.009383 Hz, IQR=718.935283 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/M2025_tanto_tanto_mono.wav
+  median=1571.265648 Hz, IQR=215.709085 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V01after_20190408tanto_tanto_02_mono.wav
+  median=1584.107772 Hz, IQR=239.094895 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V01before_20170508_tanto_tanto_02_mono.wav
+  median=1490.064281 Hz, IQR=208.555793 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V02after_20240524_tanto_tanto_02_mono.wav
+  median=1590.850891 Hz, IQR=338.482265 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V02before_20220531_tanto_tanto_02_mono.wav
+  median=1317.956932 Hz, IQR=354.908632 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V03after_20190407_tanto_tanto_02_mono.wav
+  median=1918.732506 Hz, IQR=253.006887 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V03before_20170508_tanto_tanto_02_mono.wav
+  median=1996.055727 Hz, IQR=361.895187 Hz, likely_unvoiced_frames=2
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V04after_20200706_tanto_tanto_02_mono.wav
+  median=1915.022622 Hz, IQR=290.869700 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V04before_20180730_tanto_tanto_02_mono.wav
+  median=1899.465716 Hz, IQR=282.055908 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V05after_20240502_tanto_tanto_02_mono.wav
+  median=1857.527129 Hz, IQR=323.678298 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V05before_20220420_tanto_tanto_02_mono.wav
+  median=2141.016090 Hz, IQR=326.573403 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V06after_20240618_tanto_tanto_02_mono.wav
+  median=1565.978959 Hz, IQR=212.900057 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V06before_20220530_tanto_tanto_02_mono.wav
+  median=1591.870704 Hz, IQR=370.859435 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V07after_20200629_tnto_tanto_02_mono.wav
+  median=1582.676984 Hz, IQR=230.727737 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V07before_20180730_tanto_tanto_02_mono.wav
+  median=1891.703135 Hz, IQR=256.942464 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V08after_20240422_tanto_tanto_02_mono.wav
+  median=1700.154611 Hz, IQR=382.092355 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V08before_20220420_tanto_tanto_01_mono.wav
+  median=2146.163300 Hz, IQR=742.467935 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V09after_20190508_tanto_tanto_02_mono.wav
+  median=1598.022419 Hz, IQR=281.363007 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V09before_20170526_tanto_tanto_02_mono.wav
+  median=1395.679076 Hz, IQR=172.256899 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V10after_20240501_tanto_tanto_02_mono.wav
+  median=1805.950101 Hz, IQR=406.822183 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V10before_20220420_tanto_tanto_02_mono.wav
+  median=1626.243382 Hz, IQR=907.224963 Hz, likely_unvoiced_frames=1
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V11after_20240502_tanto_tanto_02_mono.wav
+  median=1857.667650 Hz, IQR=341.850819 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V11before_20220420_tanto_tanto_02_mono.wav
+  median=1935.914678 Hz, IQR=421.631140 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V12after_20190408_tanto_tanto_02_mono.wav
+  median=1442.806675 Hz, IQR=373.943353 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V12before_20170508_tanto_tanto_02_mono.wav
+  median=1572.047629 Hz, IQR=356.265478 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V13after_20190409_tanto_tanto_02_mono.wav
+  median=1801.837102 Hz, IQR=310.803062 Hz, likely_unvoiced_frames=0
+Processing: /mnt/data/Acoustic_Analysis_Results_2026-08-18/00_full_2048_frame_wav/V13before_20170508_tanto_tanto_02_mono.wav
+  median=1883.763648 Hz, IQR=271.139309 Hz, likely_unvoiced_frames=0
+Summary CSV: /mnt/data/Acoustic_Analysis_Results_2026-08-18/06_Spectral_Centroid/spectral_centroid_summary.csv
+Processed WAV files: 41
