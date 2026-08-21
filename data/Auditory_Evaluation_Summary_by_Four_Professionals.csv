@@ -1,0 +1,26 @@
+﻿Auditory Evaluation Summary by Four Professional Raters,,,,,,,,,,,,
+Score: 0–2 / Median of 4 raters / Total: total count of code occurrences (duplicates allowed),,,,,,,,,,,,
+Auditory Evaluation Scores by Professionals,,,,,,Language Expression Codes and Total,,,,,,
+ID,T1,T2,T3,T4,Median,ID,T1,T2,T3,T4,Total,Categories represented
+E Group,,,,,,E Group,,,,,,
+E01,2,1,1,2,1.5,E01,"S01,R01,R02","S09,R04","R03,P05","R01,R04,R07,P02",11,P/R/S
+E02,2,1,1,2,1.5,E02,"R06,R07,R09","R05,R09","S06,R03","S07,R06,R07,R09",11,R/S
+E03,2,0,0,1,0.5,E03,"S04,R02,P02",R05,P01,"R02,R05,R06",8,P/R/S
+E04,0,1,0,2,0.5,E04,R06,"R05,P04",R07,"R01,R02,R06,R07,P03",9,P/R
+E05,2,2,0,1,1.5,E05,"S04,R06,R09","S10,R02,R06,P03",P05,"R02,P04,P05",11,P/R/S
+E06,2,0,0,0,0,E06,"R02,R04,P05",R08,,R07,5,P/R
+E07,0,0,0,0,0,E07,R02,S07,S07,S07,4,R/S
+V Group,,,,,,V Group,,,,,,
+V01,2,2,0,2,2,V01,"S04,R01,R09,P02,P05","S04,S06,R02,R05,P05",,"S04,R02,R09,P05",14,P/R/S
+V02,2,2,0,1,1.5,V02,"S04,S10,R02,R06,P05","S04,S10,R02,R05",,"S04,R02,R05",12,P/R/S
+V03,2,2,1,2,2,V03,"S09,S10,R01,R04,R06,R10","S09,R02,R04,R10,P05","S03,R06","S07,R02,R10,P05",17,P/R/S
+V04,1,1,0,0,0.5,V04,"S05,S07,S09,R10","S05,S09,R08,P01,P03",,,9,P/R/S
+V05,1,1,0,0,0.5,V05,"S02,S09,S10,R10","S02,S09,R10",,,7,R/S
+V06,2,2,1,2,2,V06,"S04,S07,S09,R02,R04","S04,S09,R02,R04",P03,"S04,R02,R04,R10",14,P/R/S
+V07,0,0,0,0,0,V07,,,,,0,None
+V08,0,0,0,0,0,V08,,,,,0,None
+V09,2,1,0,1,1,V09,"R02,R05,R09,P02","S04,R05,R07",,"S04,S09,R02",10,P/R/S
+V10,2,2,1,1,1.5,V10,"S09,R02,R06,R09","S09,R02,R06,R09",S03,"R02,R06,R09",12,R/S
+V11,1,1,0,1,1,V11,"S04,S09,R04","R06,R09",,"S09,R06,R09",8,R/S
+V12,0,0,0,0,0,V12,,,,,0,None
+V13,1,1,1,1,1,V13,"R02,R06,R09","R10,P05",R06,"S09,R09,R10",9,P/R/S
